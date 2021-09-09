@@ -10,56 +10,70 @@
 
   <body>
     <!-- Шапка -->
-    <header>
-      <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+    <header class="header">
+      <nav class="header-nav">
+        <a class="header-logo" href="./index.html">WebStudio</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Студия</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="header-contact">
+        <li class="header-mail">
+          <a class="header-mail-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="header-tel">
+          <a class="header-tel-link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <!-- Основной контент -->
     <main>
       <!-- Герой -->
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+      <section class="hero">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero-button" type="button">Заказать услугу</button>
       </section>
       <!-- Список преимуществ -->
-      <section>
-        <!-- h2 Преимущества спрятать в css -->
-        <h2>Преимущества</h2>
-        <ul>
-          <li>
-            <h3>Внимание к деталям</h3>
-            <p>
+      <section class="features">
+        <!-- h2 Преимущества спрятать в css правильно -->
+        <h2 hidden>Преимущества</h2>
+        <ul class="features-list">
+          <li class="features-item">
+            <h3 class="features-title">Внимание к деталям</h3>
+            <p class="features-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
-            <h3>Пунктуальность</h3>
-            <p>
+          <li class="features-item">
+            <h3 class="features-title">Пунктуальность</h3>
+            <p class="features-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
-            <h3>Планирование</h3>
-            <p>
+          <li class="features-item">
+            <h3 class="features-title">Планирование</h3>
+            <p class="features-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
-            <h3>Современные технологии</h3>
-            <p>
+          <li class="features-item">
+            <h3 class="features-title">Современные технологии</h3>
+            <p class="features-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -67,88 +81,104 @@
         </ul>
       </section>
       <!-- Список занятий -->
-      <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
-          <li>
+      <section class="work">
+        <h2 class="work-title">Чем мы занимаемся</h2>
+        <ul class="work-list">
+          <li class="work-item">
             <img
               src="./images/box1.jpg"
               alt="сотрудник создает программу"
               width="370"
             />
           </li>
-          <li>
+          <li class="work-item">
             <img
               src="./images/box2.jpg"
               alt="сотрудник создает мобильное приложение"
               width="370"
             />
           </li>
-          <li>
+          <li class="work-item">
             <img
               src="./images/box3.jpg"
-              alt="веб-дизайнер выьирает палитру"
+              alt="веб-дизайнер выбирает палитру"
               width="370"
             />
           </li>
         </ul>
       </section>
       <!-- Команда -->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
-          <li>
+      <section class="team">
+        <h2 class="team-title">Наша команда</h2>
+        <ul class="team-list">
+          <li class="team-item">
             <img
               src="./images/img1.jpg"
               alt="фото Игоря Демьяненко"
               width="270"
               height="260"
             />
-            <h3>Игорь Демьяненко</h3>
-            <p lang="en">Product Designer</p>
+            <h3 class="team-worker">Игорь Демьяненко</h3>
+            <p class="team-profession" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./images/img2.jpg"
               alt="фото Ольги Репиной"
               width="270"
               height="260"
             />
-            <h3>Ольга Репина</h3>
-            <p lang="en">Frontend Developer</p>
+            <h3 class="team-worker">Ольга Репина</h3>
+            <p class="team-profession" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./images/img3.jpg"
               alt="фото Николая Тарасова"
               width="270"
               height="260"
             />
-            <h3>Николай Тарасов</h3>
-            <p lang="en">Marketing</p>
+            <h3 class="team-worker">Николай Тарасов</h3>
+            <p class="team-profession" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./images/img4.jpg"
               alt="фото Михаила Ермакова"
               width="270"
               height="260"
             />
-            <h3>Михаил Ермаков</h3>
-            <p lang="en">UI Designer</p>
+            <h3 class="team-worker">Михаил Ермаков</h3>
+            <p class="team-profession" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Подвал -->
-    <footer>
-      <a href="#">WebStudio</a>
+    <footer class="footer">
+      <a class="footer-logo" href="./index.html">WebStudio</a>
       <!-- Список контактов -->
-      <address>
-        <ul>
-          <li>г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <address class="footer-contact">
+        <ul class="footer-contact-list">
+          <li class="foooter-address">
+            <a
+              class="footer-address-link"
+              href="https://goo.gl/maps/CdvJLRiEL6Q8Smko8"
+              target="_blank"
+              rel="noreferrer noopener"
+              >г.Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li class="footer-mail">
+            <a class="footer-mail-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="footer-tel">
+            <a class="footer-tel-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
