@@ -8,6 +8,7 @@
   --white-background-color: #ffffff;
   --hero-background-color: #2f303a;
   --team-background-color: #f5f4fa;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
 /* white background #E5E5E5
@@ -92,16 +93,20 @@ a {
 }
 /* Герой */
 .hero {
+  background-color: var(--hero-background-color);
+}
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: var(--hero-background-color);
+
   color: var(--white-text-color);
 }
 .hero-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -161,18 +166,28 @@ a {
   color: var(--white-text-color);
 }
 
-.contact .link {
+.contact-address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--white-text-color);
 }
+
+.contact-mail,
+.contact-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-text-color);
+}
+
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
 }
 /* Портфолио */
 .filter {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
