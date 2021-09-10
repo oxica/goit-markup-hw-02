@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -12,29 +18,29 @@
     <!-- Шапка -->
     <header class="header">
       <nav class="header-nav">
-        <a class="header-logo" href="./index.html">WebStudio</a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Студия</a>
+        <a class="logo" href="./index.html"
+          >Web<span class="logo-black">Studio</span></a
+        >
+        <ul class="nav list">
+          <li class="item">
+            <a class="link current" href="./index.html">Студия</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Портфолио</a>
+          <li class="item">
+            <a class="link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Контакты</a>
+          <li class="item">
+            <a class="link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="header-contact">
+      <ul class="header-contact list">
         <li class="header-mail">
-          <a class="header-mail-link" href="mailto:info@devstudio.com"
+          <a class="mail-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li class="header-tel">
-          <a class="header-tel-link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <a class="tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
@@ -46,10 +52,10 @@
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
       <!-- Список преимуществ -->
-      <section class="features">
+      <section class="section">
         <!-- h2 Преимущества спрятать в css правильно -->
         <h2 hidden>Преимущества</h2>
-        <ul class="features-list">
+        <ul class="features list">
           <li class="features-item">
             <h3 class="features-title">Внимание к деталям</h3>
             <p class="features-text">
@@ -81,9 +87,9 @@
         </ul>
       </section>
       <!-- Список занятий -->
-      <section class="work">
-        <h2 class="work-title">Чем мы занимаемся</h2>
-        <ul class="work-list">
+      <section class="section">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="work list">
           <li class="work-item">
             <img
               src="./images/box1.jpg"
@@ -111,9 +117,9 @@
         </ul>
       </section>
       <!-- Команда -->
-      <section class="team">
-        <h2 class="team-title">Наша команда</h2>
-        <ul class="team-list">
+      <section class="section-team">
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="team list">
           <li class="team-item">
             <img
               src="./images/img1.jpg"
@@ -159,13 +165,15 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">
-      <a class="footer-logo" href="./index.html">WebStudio</a>
+      <a class="logo" href="./index.html"
+        >Web<span class="logo-white">Studio</span></a
+      >
       <!-- Список контактов -->
       <address class="footer-contact">
-        <ul class="footer-contact-list">
-          <li class="foooter-address">
+        <ul class="contact list">
+          <li class="footer-address">
             <a
-              class="footer-address-link"
+              class="contact-address link"
               href="https://goo.gl/maps/CdvJLRiEL6Q8Smko8"
               target="_blank"
               rel="noreferrer noopener"
@@ -173,12 +181,12 @@
             >
           </li>
           <li class="footer-mail">
-            <a class="footer-mail-link" href="mailto:info@devstudio.com"
+            <a class="contact-mail link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="footer-tel">
-            <a class="footer-tel-link" href="tel:+380961111111"
+            <a class="contact-tel link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
